@@ -166,7 +166,7 @@ DNA = arquivo.read()
 import fileinput #Pode usar isso para importar arquivo 
 
 # Imprime o dados originais do arquivo base.
-print ("Conjunto de dados da amostra: ", DNA)
+print (DNA)
 
 # 1 Opção - Função ".count()".
 DNA_A = DNA.count("A")

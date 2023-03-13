@@ -149,9 +149,52 @@ Exemplo:
 Baixar e/ou abrir arquivo *rosalind_dna.txt* no ambiente de desenvolvimento do seu código. Ex.: Google Colab, IDLE, Terminal.
 
 * Use o seguinte código: 
+```
+from google.colab import files
+rosalind_DNA = files.upload()
+```
+* Veja que tem dentro do arquivo:
+```
+!cat /content/rosalind_dna.txt
+```
+* Código para resolver problema (com duas opções):
 
+```
+# Ler o arquivo e armazenar a string numa varíavel.
+arquivo = open("/content/rosalind_dna.txt", 'r')
+DNA = arquivo.read()
+import fileinput #Pode usar isso para importar arquivo 
 
+# Imprime o dados originais do arquivo base.
+print ("Conjunto de dados da amostra: ", DNA)
 
+# 1 Opção - Função ".count()".
+DNA_A = DNA.count("A")
+DNA_C = DNA.count("C")
+DNA_G = DNA.count("G")
+DNA_T = DNA.count("T")
+
+'''
+# 2 Opção - Laço "for".
+for sequence in fileinput.input('/content/rosalind_dna.txt'):
+  dna_count_a = 0
+  dna_count_c = 0
+  dna_count_g = 0
+  dna_count_t = 0
+  for base in sequence:
+    if base == "A":
+      dna_count_a += 1
+    elif base == "C":
+      dna_count_c += 1
+    elif base == "G":
+      dna_count_g += 1
+    elif base == "T":
+      dna_count_t += 1
+'''
+# Imprime as contagens de simbolos correspondente as bases de DNA.
+print(DNA_A, DNA_C, DNA_G, DNA_T) #Opção 1
+#print(dna_count_a, dna_count_c, dna_count_g, dna_count_t) #Opção 2
+```
 
 
 

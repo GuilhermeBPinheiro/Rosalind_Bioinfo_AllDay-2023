@@ -146,6 +146,10 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 
 Exemplo:
 
+Baixar e/ou abrir arquivo *rosalind_dna.txt* no ambiente de desenvolvimento do seu código. Ex.: Google Colab, IDLE, Terminal.
+
+* Use o seguinte código: 
+
 
 
 
